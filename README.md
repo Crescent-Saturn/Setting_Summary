@@ -51,3 +51,11 @@ cmd->gpedit.msc:
 cmd->services.msc:      
 HomeGroup Listener, Provider--> Disabled       
 Superfetch-->Disabled       
+
+
+### LaTeX moderncv No PDF output solution (MiKTeX):
+
+cmd:        
+    initexmf --mkmaps  
+    initexmf --update-fndb  
+	
