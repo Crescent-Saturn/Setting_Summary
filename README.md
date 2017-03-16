@@ -14,3 +14,29 @@ ST3  `ctrl+`` or  ``View->Show Consol` :
 - Anaconda
 - Material Theme
 - LatexTools
+
+
+
+## Windows 10
+
+**Disable data logging**:		
+- Head to Settings > Privacy, and disable everything, unless there are some things you really need.
+- While within the Privacy page, go to Feedback, select Never in the first box, and Basic in the second box.
+- Head to Settings > Update and Security > Advanced Options > Choose how updates are delivered, and turn the first switch off.
+- Disable Cortana by clicking the Search bar/icon.
+- (Optional) Disable web search in Search by going to Settings, and turning off Search online and include web results.
+
+cmd->gpedit.msc:	        
+本地计算机 策略        
+-->管理模板-->Windows组件         
+       1.  -->Windows更新-->配置自动更新-->启用--自动下载并通知安装        
+       2.  -->Windows Defender-->关闭 --> 启用        
+       3.  -->数据收集和预览版本-->禁用       
+       4.  -->OneDrive--禁止使用进行文件存储-->启用            
+-->管理模板-->系统        
+       1. -->关机选项-->禁用      
+       
+       
+cmd->services.msc:      
+HomeGroup Listener, Provider--> Disabled       
+Superfetch-->Disabled       
