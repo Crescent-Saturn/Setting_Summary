@@ -13,8 +13,19 @@ ST3  `ctrl+`` or  ``View->Show Consol` :
 - ConvertToUTF8
 - Anaconda
 - Material Theme
-- LatexTools
+- LatexTools        
 
+**New Build** (Python3 Example)	        
+`Tools -> Build System -> New Build System`
+
+    {       
+        "cmd": ["/usr/bin/python3","-u", "$file"], 
+        "selector": "source.python", 
+        "encoding": "utf8",
+        "file_regex": "file \"(...*?)\", line ([0-9]+)"
+    }
+    
+Saved As Python3.sublime-build.
 
 
 ## Windows 10
