@@ -16,5 +16,5 @@
     "always_show_minimap_viewport": true,
     "atomic_save": true,
     "highlight_modified_tabs": true,
-
+	"auto_complete_triggers": [{"selector": "source.python", "characters": "."}], // Python auto-completion on dot.
 }
