@@ -59,3 +59,12 @@ cmd:
     initexmf --mkmaps  
     initexmf --update-fndb  
 	
+## Linux (Deepin, Elementary OS, Solus, etc.)
+修复启动：		
+
+	sudo grub-install /dev/sdb				% Deepin in sdb1, Solus in sdb2
+	sudo grub-install --recheck /dev/sdb	% Windows 10 in sda SSD	
+	sudo update-grub		
+	sudo update-grub2		
+
+	
