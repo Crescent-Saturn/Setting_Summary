@@ -67,4 +67,9 @@ cmd:
 	sudo update-grub		
 	sudo update-grub2		
 
+
+Sudo visudo：		
+
+	sudo visudo
+	Defaults env_reset, pwfeedbakc, timestamp_timeout=30		% 30 min, pw will have * in terminal
 	
