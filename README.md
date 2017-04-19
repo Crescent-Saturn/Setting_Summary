@@ -71,5 +71,5 @@ cmd:
 Sudo visudo：		
 
 	sudo visudo
-	Defaults env_reset, pwfeedbakc, timestamp_timeout=30		% 30 min, pw will have * in terminal
+	Defaults env_reset, pwfeedback, timestamp_timeout=30		% 30 min, pw will have * in terminal
 	
