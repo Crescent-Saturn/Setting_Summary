@@ -52,6 +52,25 @@ cmd->services.msc:
 HomeGroup Listener, Provider--> Disabled       
 Superfetch-->Disabled       
 
+可以尝试以下方案检查系统文件完整性：		
+在管理员命令提示符下键入以下命令：
+ 
+	Dism /Online /Cleanup-Image /ScanHealth
+ 
+这条命令将扫描全部系统文件并和官方系统文件对比，扫描计算机中的不一致情况。
+ 
+	Dism /Online /Cleanup-Image /CheckHealth
+ 
+这条命令必须在前一条命令执行完以后，发现系统文件有损坏时使用。
+ 
+	DISM /Online /Cleanup-image /RestoreHealth
+ 
+这条命令是把那些不同的系统文件还原成官方系统源文件。
+ 
+无论以上命令运行结果如何，运行完成后重启，再键入以下命令：
+ 
+	sfc /SCANNOW
+
 
 ### LaTeX moderncv No PDF output solution (MiKTeX):
 
