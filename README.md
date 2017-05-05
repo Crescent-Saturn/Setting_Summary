@@ -71,6 +71,11 @@ Superfetch-->Disabled
  
 	sfc /SCANNOW
 
+电源计划－默认方案
+用管理员命令运行“sc config ndu start= disabled”
+
+WPS专业增强版：
+THUV2-32HH7-6NMHN-PTX7Y-QQCTH
 
 ### LaTeX moderncv No PDF output solution (MiKTeX):
 
@@ -85,6 +90,12 @@ cmd:
 	sudo grub-install --recheck /dev/sdb	% Windows 10 in sda SSD	
 	sudo update-grub		
 	sudo update-grub2		
+
+
+设置时区
+
+	sudo hwclock --systohc --localtime
+	sudo hwclock --systohc --localtime
 
 
 Sudo visudo：		
