@@ -109,3 +109,4 @@ uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型
 	sudo add-apt-repository ppa:utappia/stable
 	sudo apt update
 	sudo apt install ucaresystem-core
+	sudo ucaresystem-core
