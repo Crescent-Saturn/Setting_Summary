@@ -83,7 +83,7 @@ cmd:
     initexmf --mkmaps  
     initexmf --update-fndb  
 	
-## Linux (Deepin, Elementary OS, Xubuntu, Solus, etc.)
+## Linux (Deepin, Mint, Elementary OS, Xubuntu, Solus, etc.)
 修复启动：		
 
 	sudo grub-install /dev/sdb				% Deepin in sdb1, Elementary/Xubuntu/Solus in sdb2
@@ -92,7 +92,7 @@ cmd:
 	sudo update-grub2		
 
 
-设置时区
+设置时区（双系统同步）
 
 	sudo hwclock --systohc --localtime
 	sudo hwclock --systohc --localtime
@@ -103,3 +103,9 @@ Sudo visudo：
 	sudo visudo
 	Defaults env_reset, pwfeedback, timestamp_timeout=30		% 30 min, pw will have * in terminal
 	
+
+uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型实用程序，另一方面它可以通过多种方式减少系统管理员的任务，节省大量时间。它没有任何 GUI，并提供纯粹的命令行界面来执行活动。  
+
+	sudo add-apt-repository ppa:utappia/stable
+	sudo apt update
+	sudo apt install ucaresystem-core
