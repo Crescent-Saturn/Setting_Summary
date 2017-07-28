@@ -110,3 +110,7 @@ uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型
 	sudo apt update
 	sudo apt install ucaresystem-core
 	sudo ucaresystem-core
+
+Upgrade all pip packages:        
+
+	pip list --outdated | cut -d' ' -f1 | xargs pip install --upgrade
