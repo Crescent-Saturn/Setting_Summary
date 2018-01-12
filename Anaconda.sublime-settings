@@ -1,12 +1,9 @@
-/*
-    Anaconda user settings
-*/
 {
-    "complete_parameters": true,
-    "complete_all_parameters": true,
-
-    "anaconda_gutter_theme": "alpha",
+	"swallow_startup_errors": true,
+	"complete_parameters": false,
+    "auto_formatting": true,
+    "anaconda_gutter_theme": "simple",
+    // "anaconda_linting":false,
     "anaconda_linter_mark_style": "none",
-    "anaconda_linter_underlines": true,
 
 }
