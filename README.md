@@ -13,7 +13,9 @@ ST3  `ctrl+`` or  ``View->Show Consol` :
 - ConvertToUTF8
 - Anaconda
 - Material Theme
-- LatexTools        
+- LatexTools
+- SublimeREPL
+- ExportHtml
 
 **New Build** (Python3 Example)	        
 `Tools -> Build System -> New Build System`
