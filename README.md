@@ -116,4 +116,4 @@ uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型
 
 Upgrade all pip packages:        
 
-	pip list --outdated | cut -d' ' -f1 | xargs pip install --upgrade
+	pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U
