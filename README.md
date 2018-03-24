@@ -117,3 +117,9 @@ uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型
 Upgrade all pip packages:        
 
 	pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U
+
+
+### PDF Reader background color:    
+仿墨水屏的配色:    
+文本颜色RGU：0,0,0    
+页面背景色RGU：223,223,223    
