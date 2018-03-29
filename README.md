@@ -82,10 +82,12 @@ THUV2-32HH7-6NMHN-PTX7Y-QQCTH
 
 ### LaTeX moderncv No PDF output solution (MiKTeX):
 
-cmd:        
+cmd:
+```     
     initexmf --mkmaps  
     initexmf --update-fndb  
-	
+```     
+
 ## Linux (Deepin, Mint, Elementary OS, Xubuntu, Solus, etc.)
 修复启动：		
 
