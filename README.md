@@ -125,5 +125,5 @@ Upgrade all pip packages:
 
 ### PDF Reader background color:    
 仿墨水屏的配色:    
-文本颜色RGU：0,0,0    
-页面背景色RGU：223,223,223    
+文本颜色RGB：0,0,0    
+页面背景色RGB：223,223,223    
