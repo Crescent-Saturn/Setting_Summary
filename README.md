@@ -96,6 +96,12 @@ cmd:
 	xelatex --no-pdf test.tex
 	xelatex --vv test.xdv
 
+In .tex file add these lines:
+
+	% Why do I need this one some computers and not others?
+	\usepackage{fontspec} % Was able to fix it with this line
+	\defaultfontfeatures{Extension = .otf} % ...and this line
+
 
 ## Linux (Deepin, Mint, Elementary OS, Xubuntu, Solus, etc.)
 修复启动：		
