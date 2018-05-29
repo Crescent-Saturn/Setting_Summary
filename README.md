@@ -103,6 +103,13 @@ In .tex file add these lines:
 	\defaultfontfeatures{Extension = .otf} % ...and this line
 
 
+## FFmpeg convert audio files
+cmd:
+
+	for %a in ("*.mp4") do ffmpeg -i "%a" "%~na.mp4" 
+
+
+
 ## Linux (Deepin, Mint, Elementary OS, Xubuntu, Solus, etc.)
 修复启动：		
 
