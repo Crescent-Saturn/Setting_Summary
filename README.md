@@ -106,7 +106,7 @@ In .tex file add these lines:
 ## FFmpeg convert audio files
 cmd:
 
-	for %a in ("*.mp4") do ffmpeg -i "%a" "%~na.mp4" 
+	for %a in ("*.mp3") do ffmpeg -i "%a" "%~na.m4a" 
 
 
 
