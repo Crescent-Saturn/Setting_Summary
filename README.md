@@ -102,6 +102,15 @@ In .tex file add these lines:
 	\usepackage{fontspec} % Was able to fix it with this line
 	\defaultfontfeatures{Extension = .otf} % ...and this line
 
+Latex makenomenclature:
+	
+	xelatex main.tex
+	bibtex ch1 ...etc
+	makeindex main.nlo -s nomencl.ist -o main.nls
+	xelatex main.tex
+	xelatex main.tex
+
+
 
 ## FFmpeg convert audio files
 cmd:
