@@ -156,3 +156,15 @@ Upgrade all pip packages:
 仿墨水屏的配色:    
 文本颜色RGB：0,0,0    
 页面背景色RGB：223,223,223    
+
+
+### Conda tutorials    
+  - Install miniconda
+  - conda config --append channels conda-forge    
+  - vim .condarc:    
+  		channels:    
+			- defaults    
+		  	- conda-forge    
+		channel_priority: true
+  - conda update --all -y
+  ...
