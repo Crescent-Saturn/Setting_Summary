@@ -1,3 +1,6 @@
+" line numbers
+set number
+
 " 禁止生成 swap 恢复文件
 set noswapfile
 " vim 内部使用的编码，默认使用 latin1，改成通用的 utf8 编码，避免乱码
@@ -37,7 +40,19 @@ filetype plugin indent on
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
-
+Plug 'jacoborus/tender.vim'  
+Plug 'vim-airline/vim-airline'
 
 " Initialize plugin system
 call plug#end()
+
+" If you have vim >=8.0 or Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Theme
+colorscheme tender
+
+" set airline theme
+let g:airline_theme = 'tender'
