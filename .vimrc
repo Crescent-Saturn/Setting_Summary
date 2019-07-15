@@ -42,6 +42,8 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug 'jacoborus/tender.vim'  
 Plug 'vim-airline/vim-airline'
+Plug 'Yggdroot/indentLine'
+Plug 'mhinz/vim-startify'
 
 " Initialize plugin system
 call plug#end()
