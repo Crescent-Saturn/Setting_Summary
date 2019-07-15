@@ -44,6 +44,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
+Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
 call plug#end()
@@ -58,3 +59,6 @@ colorscheme tender
 
 " set airline theme
 let g:airline_theme = 'tender'
+
+let NERDTreeWinSize=25
+map <F3> :NERDTreeToggle<CR>
