@@ -1,8 +1,0 @@
-# Written by com.deepin.daemon.Grub2
-GRUB_BACKGROUND="/boot/grub/themes/deepin/background.png"
-GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"
-GRUB_DEFAULT="2"
-GRUB_DISTRIBUTOR="`/usr/bin/lsb_release -d -s 2>/dev/null || echo Deepin`"
-GRUB_GFXMODE="1280x800"
-GRUB_THEME="/boot/grub/themes/deepin/theme.txt"
-GRUB_TIMEOUT="10"
