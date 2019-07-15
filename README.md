@@ -147,10 +147,13 @@ uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型
 	sudo apt install ucaresystem-core
 	sudo ucaresystem-core
 
-Upgrade all pip packages:        
+~~Upgrade all pip packages:~~      
 
-	pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U
-
+~~pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U~~
+	
+    
+**Use conda instead of pip**
+---
 
 ### PDF Reader background color:    
 仿墨水屏的配色:    
