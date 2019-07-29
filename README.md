@@ -157,8 +157,8 @@ uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型
 
 ### PDF Reader background color:    
 仿墨水屏的配色:    
-文本颜色RGB：0,0,0    
-页面背景色RGB：223,223,223    
+文本颜色RGB：0,0,0    (HEX:000000)
+页面背景色RGB：223,223,223 (HEX: E9E9E9)   
 
 
 ### Conda tutorials    
