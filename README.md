@@ -14,20 +14,22 @@ ST3 `View->Show Consol` :
 **Packages**:		
 - ConvertToUTF8
 - Anaconda
-- Material Theme
+- Material Theme (Spacegray since MT is no longer maintained)
 - LatexTools
 - SublimeREPL
 - ExportHtml
-- InputArgs
+- InputArgs    
+- Side
 
-**New Build** (Python3 Example)	        
+**New Build** (Python3 Example or conda/envs/python)	        
 `Tools -> Build System -> New Build System`
 
     {       
         "cmd": ["/usr/bin/python3","-u", "$file"], 
         "selector": "source.python", 
         "encoding": "utf8",
-        "file_regex": "file \"(...*?)\", line ([0-9]+)"
+        "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+
     }
     
 Saved As Python3.sublime-build.
