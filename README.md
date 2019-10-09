@@ -142,6 +142,26 @@ Sudo visudo：
 	Defaults env_reset, pwfeedback, timestamp_timeout=30		% 30 min, pw will have * in terminal
 	
 
+#### [terminal-colors-branch](https://gist.github.com/danielalvarenga/2df8cabbd6f3041c2378)
+```
+# Add in ~/.bashrc or ~/.bash_profile
+function parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+ 
+RED="\[\033[01;31m\]"
+YELLOW="\[\033[01;33m\]"
+GREEN="\[\033[01;32m\]"
+BLUE="\[\033[01;34m\]"
+NO_COLOR="\[\033[00m\]"
+
+# without host
+PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+# with host
+# PS1="$GREEN\u@\h$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+```
+
+
 uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型实用程序，另一方面它可以通过多种方式减少系统管理员的任务，节省大量时间。它没有任何 GUI，并提供纯粹的命令行界面来执行活动。  
 
 	sudo add-apt-repository ppa:utappia/stable
