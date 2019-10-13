@@ -1,50 +1,18 @@
-# Setting_Summary
-Setting summary for OS, IDE, Sys, etc.
+# Personal PC configuration summary
+Setting summary for OS, IDE, Sys, Tools, etc.
 
 ## Table of Contents
 1. [Windows](#Windows)
-2. [Linux]()
-3. [Essential Tools]()
-	1. [Cross platform](#Sublime-Text-3)
-	2. [Open source](#Windows-10)
+2. [Linux](#Linux)
+3. [Essential Tools](#Essential-Tools)
+	1. [Cross platform](#Cross-platform)
+	2. [Open source](#Open-source)
 
 
 
-## Sublime Text 3  
-**Package Control**:     
-ST3 `View->Show Consol` :       
 
-
-	import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-
-
-
-**Packages**:		
-- ConvertToUTF8
-- Anaconda
-- Material Theme (Using spacegray since MT is no longer maintained)
-- LatexTools
-- SublimeREPL
-- ExportHtml
-- InputArgs    
-- Side
-
-**New Build** (Python3 Example or conda/envs/python)	        
-`Tools -> Build System -> New Build System`
-
-    {       
-        "cmd": ["/usr/bin/python3","-u", "$file"], 
-        "selector": "source.python", 
-        "encoding": "utf8",
-        "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-
-    }
-    
-Saved As Python3.sublime-build.
-
-
-## Windows 10
-
+### Winodws
+*(Windows 10)*
 **Disable data logging**:		
 - Head to Settings > Privacy, and disable everything, unless there are some things you really need.
 - While within the Privacy page, go to Feedback, select Never in the first box, and Basic in the second box.
@@ -92,7 +60,7 @@ Superfetch-->Disabled
 WPS专业增强版：
 THUV2-32HH7-6NMHN-PTX7Y-QQCTH
 
-### LaTeX moderncv No PDF output solution (MiKTeX):
+**LaTeX moderncv No PDF output solution (MiKTeX)**
 
 cmd:
     
@@ -100,7 +68,7 @@ cmd:
     initexmf --update-fndb  
      
 
-### Xelatex without PDF output file (MikTex):
+**Xelatex without PDF output file (MikTex):**
 cmd:
 
 	xelatex --no-pdf test.tex
@@ -121,15 +89,7 @@ Latex makenomenclature:
 	xelatex main.tex
 
 
-
-## FFmpeg convert audio files
-cmd:
-
-	for %a in ("*.mp3") do ffmpeg -i "%a" "%~na.m4a" 
-
-
-
-## Linux (Deepin, Mint, Elementary OS, Xubuntu, Solus, etc.)
+### 2. Linux
 修复启动：		
 
 	sudo grub-install /dev/sdb				% Deepin in sdb1, Elementary/Xubuntu/Solus in sdb2
@@ -150,7 +110,31 @@ Sudo visudo：
 	Defaults env_reset, pwfeedback, timestamp_timeout=30		% 30 min, pw will have * in terminal
 	
 
-#### [terminal-colors-branch](https://gist.github.com/danielalvarenga/2df8cabbd6f3041c2378)
+>~~Upgrade all pip packages:~~      
+
+>~~pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U~~
+	   
+**Use conda instead of pip**
+
+**Conda tutorials**
+  - Install miniconda
+  - conda config --append channels conda-forge    
+  - vim .condarc:    
+  		channels:    
+			- defaults    
+		  	- conda-forge    
+		channel_priority: true
+  - conda update --all -y
+  ...
+
+**FFmpeg convert audio files**
+cmd:
+
+	for %a in ("*.mp3") do ffmpeg -i "%a" "%~na.m4a" 
+
+
+
+**[terminal-colors-branch](https://gist.github.com/danielalvarenga/2df8cabbd6f3041c2378)**
 ```
 # Add in ~/.bashrc or ~/.bash_profile
 function parse_git_branch () {
@@ -169,35 +153,57 @@ PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 # PS1="$GREEN\u@\h$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 ```
 
+### 3. Essential Tools
 
-uCareSystem Core 是一种能够自动执行基本的系统维护活动的轻型实用程序，另一方面它可以通过多种方式减少系统管理员的任务，节省大量时间。它没有任何 GUI，并提供纯粹的命令行界面来执行活动。  
+#### 3.1 Cross platform
+**Sublime Text 3**  
+*Package Control*:    
+ST3 `View->Show Consol` :       
 
-	sudo add-apt-repository ppa:utappia/stable
-	sudo apt update
-	sudo apt install ucaresystem-core
-	sudo ucaresystem-core
 
-~~Upgrade all pip packages:~~      
+	import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 
-~~pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U~~
-	
+
+
+*Packages*:		
+- ConvertToUTF8
+- Anaconda
+- Material Theme (Using spacegray since MT is no longer maintained)
+- LatexTools
+- SublimeREPL
+- ExportHtml
+- InputArgs    
+- Side
+
+**New Build** (Python3 Example or conda/envs/python)	        
+`Tools -> Build System -> New Build System`
+
+    {       
+        "cmd": ["/usr/bin/python3","-u", "$file"], 
+        "selector": "source.python", 
+        "encoding": "utf8",
+        "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+
+    }
     
-**Use conda instead of pip**
----
+Saved As Python3.sublime-build.
 
-### PDF Reader background color:    
+
+
+**PDF Reader background color:**    
 仿墨水屏的配色:    
 文本颜色RGB：0,0,0    (HEX:000000)    
 页面背景色RGB：223,223,223 (HEX: E9E9E9)   
 
+#### 3.2 Open source
 
-### Conda tutorials    
-  - Install miniconda
-  - conda config --append channels conda-forge    
-  - vim .condarc:    
-  		channels:    
-			- defaults    
-		  	- conda-forge    
-		channel_priority: true
-  - conda update --all -y
-  ...
+
+
+
+
+
+---
+
+
+
+
