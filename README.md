@@ -2,11 +2,11 @@
 Setting summary for OS, IDE, Sys, etc.
 
 ## Table of Contents
-1. [Windows]()
+1. [Windows](https://github.com/Crescent-Saturn/Setting_Summary/tree/dev#Windows)
 2. [Linux]()
 3. [Essential Tools]()
-	3.1 [Cross platform]()
-	3.2 [Open source]()
+	3.1. [Cross platform](https://github.com/Crescent-Saturn/Setting_Summary/tree/dev#SublimeText3)
+	3.2. [Open source]()
 
 
 
