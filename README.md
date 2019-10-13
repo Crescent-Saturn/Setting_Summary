@@ -1,6 +1,14 @@
 # Setting_Summary
 Setting summary for OS, IDE, Sys, etc.
 
+## Table of Contents
+1. [Windows]()
+2. [Linux]()
+3. [Essential Tools]()
+	3.1 [Cross platform]()
+	3.2 [Open source]()
+
+
 
 ## Sublime Text 3  
 **Package Control**:     
@@ -14,7 +22,7 @@ ST3 `View->Show Consol` :
 **Packages**:		
 - ConvertToUTF8
 - Anaconda
-- Material Theme (Spacegray since MT is no longer maintained)
+- Material Theme (Using spacegray since MT is no longer maintained)
 - LatexTools
 - SublimeREPL
 - ExportHtml
