@@ -1,4 +1,4 @@
-# Personal PC configuration summary
+# PC configuration summary
 Setting summary for OS, IDE, Sys, Tools, etc.
 
 ## Table of Contents
