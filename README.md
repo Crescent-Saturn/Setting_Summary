@@ -210,7 +210,10 @@ Anaconda plugin setting for Sublime Text can be found [here](https://github.com/
 <a name="Open-source"></a>
 #### 3.2 Open source
 
+**Coding fonts**
 
+ - [Cascadia Code](https://github.com/microsoft/cascadia-code)
+ - [Source Code Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
 
 
 
