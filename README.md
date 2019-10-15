@@ -10,8 +10,8 @@ Setting summary for OS, IDE, Sys, Tools, etc.
 
 
 
-
-### Winodws
+<a name="Windows"></a>
+### 1. Windows
 *(Windows 10)*
 **Disable data logging**:		
 - Head to Settings > Privacy, and disable everything, unless there are some things you really need.
@@ -89,6 +89,7 @@ Latex makenomenclature:
 	xelatex main.tex
 
 
+<a name="Linux"></a>
 ### 2. Linux
 **修复启动：**		
 
@@ -158,8 +159,10 @@ PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 **Vim**
 Check `.vimrc` [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/.vimrc) for details. Copy to `/home/`.
 
+<a name="Essential-Tools"></a>
 ### 3. Essential Tools
 
+<a name="Cross-platform"></a>
 #### 3.1 Cross platform
 **Sublime Text 3**  
 *Package Control*:    
@@ -204,6 +207,7 @@ Anaconda plugin setting for Sublime Text can be found [here](https://github.com/
 文本颜色RGB：0,0,0    (HEX:000000)    
 页面背景色RGB：223,223,223 (HEX: E9E9E9)   
 
+<a name="Open-source"></a>
 #### 3.2 Open source
 
 
