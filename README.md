@@ -90,7 +90,7 @@ Latex makenomenclature:
 
 
 ### 2. Linux
-修复启动：		
+**修复启动：**		
 
 	sudo grub-install /dev/sdb				% Deepin in sdb1, Elementary/Xubuntu/Solus in sdb2
 	sudo grub-install --recheck /dev/sdb	% Windows 10 in sda SSD	
@@ -98,13 +98,13 @@ Latex makenomenclature:
 	sudo update-grub2		
 
 
-设置时区（双系统同步）
+**设置时区（双系统同步）**
 
 	sudo hwclock --systohc --localtime
 	sudo hwclock --systohc --localtime
 
 
-Sudo visudo：		
+**Sudo visudo：**		
 
 	sudo visudo
 	Defaults env_reset, pwfeedback, timestamp_timeout=30		% 30 min, pw will have * in terminal
@@ -117,14 +117,14 @@ Sudo visudo：
 **Use conda instead of pip**
 
 **Conda tutorials**
-  - Install miniconda
-  - conda config --append channels conda-forge    
-  - vim .condarc:    
+>  - Install miniconda
+>  - conda config --append channels conda-forge    
+>  - vim .condarc:    
   		channels:    
 			- defaults    
 		  	- conda-forge    
 		channel_priority: true
-  - conda update --all -y
+>  - conda update --all -y
   ...
 
 **FFmpeg convert audio files**
@@ -135,6 +135,8 @@ cmd:
 
 
 **[terminal-colors-branch](https://gist.github.com/danielalvarenga/2df8cabbd6f3041c2378)**
+
+Display git branches in terminal:
 ```
 # Add in ~/.bashrc or ~/.bash_profile
 function parse_git_branch () {
@@ -152,6 +154,9 @@ PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 # with host
 # PS1="$GREEN\u@\h$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 ```
+
+**Vim**
+Check `.vimrc` [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/.vimrc) for details. Copy to `/home/`.
 
 ### 3. Essential Tools
 
@@ -186,7 +191,11 @@ ST3 `View->Show Consol` :
 
     }
     
-Saved As Python3.sublime-build.
+Saved As Python3.sublime-build.    
+
+More details for setting can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Preferences.sublime-settings).    
+
+Anaconda plugin setting for Sublime Text can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Anaconda.sublime-settings)
 
 
 
