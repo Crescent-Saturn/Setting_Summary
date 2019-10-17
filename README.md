@@ -206,6 +206,13 @@ Anaconda plugin setting for Sublime Text can be found [here](https://github.com/
 文本颜色RGB：0,0,0    (HEX:000000)    
 页面背景色RGB：223,223,223 (HEX: E9E9E9)    
 
+**[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)**
+*Windows 10*:
+> 用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示和更换皮肤
+
+**[QuickLook](http://pooi.moe/QuickLook/)**
+Windows 空格预览工具，免费开源
+
 <a name="Open-source"></a>
 #### 3.2 Open source
 
