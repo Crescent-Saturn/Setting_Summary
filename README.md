@@ -172,40 +172,39 @@ ST3 `View->Show Consol` :
 	import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 
 
-
-*Packages*:		
+*Packages*:
 - ConvertToUTF8
 - Anaconda
-- Material Theme (Using spacegray since MT is no longer maintained)
 - LatexTools
 - SublimeREPL
 - ExportHtml
-- InputArgs    
+- InputArgs
 - Side
 
 **New Build** (Python3 Example or conda/envs/python)	        
 `Tools -> Build System -> New Build System`
 
     {       
-        "cmd": ["/usr/bin/python3","-u", "$file"], 
-        "selector": "source.python", 
-        "encoding": "utf8",
-        "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "cmd": ["/usr/bin/python3","-u", "$file"], 
+    "selector": "source.python", 
+    "encoding": "utf8",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 
     }
-    
-Saved As Python3.sublime-build.    
 
-More details for setting can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Preferences.sublime-settings).    
+Saved As Python3.sublime-build.
+
+More details for setting can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Preferences.sublime-settings).
 
 Anaconda plugin setting for Sublime Text can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Anaconda.sublime-settings)
 
 
 
-**PDF Reader background color:**    
+**PDF Reader background color:**
+
 仿墨水屏的配色:    
 文本颜色RGB：0,0,0    (HEX:000000)    
-页面背景色RGB：223,223,223 (HEX: E9E9E9)   
+页面背景色RGB：223,223,223 (HEX: E9E9E9)    
 
 <a name="Open-source"></a>
 #### 3.2 Open source
@@ -214,12 +213,3 @@ Anaconda plugin setting for Sublime Text can be found [here](https://github.com/
 
  - [Cascadia Code](https://github.com/microsoft/cascadia-code)
  - [Source Code Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
-
-
-
-
----
-
-
-
-
