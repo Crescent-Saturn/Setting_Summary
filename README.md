@@ -221,6 +221,8 @@ Windows 空格预览工具，免费开源
  - Markdown Preview Enhanced
  - Visual Studio IntelliCode
  - vscode-icons
+ - markdownlint
+ - Remote
 
 
 <a name="Open-source"></a>
