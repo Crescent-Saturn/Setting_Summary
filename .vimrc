@@ -35,7 +35,8 @@ syntax enable
 " 开启自动识别文件类型，并根据文件类型加载不同的插件和缩进规则
 filetype plugin indent on
 
-
+" no -- INSERT -- in status line
+set noshowmode
 " Auto-install Vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -48,7 +49,8 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 Plug 'jacoborus/tender.vim'  
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
