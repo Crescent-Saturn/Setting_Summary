@@ -223,6 +223,7 @@ Windows 空格预览工具，免费开源
  - vscode-icons
  - markdownlint
  - Remote
+ - Git Graph
 
 
 <a name="Open-source"></a>
