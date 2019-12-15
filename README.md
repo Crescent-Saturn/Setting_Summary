@@ -88,6 +88,11 @@ Latex makenomenclature:
 	xelatex main.tex
 	xelatex main.tex
 
+**Merge TS file by CMD**    
+    
+	copy /b play*.ts play_new.ts
+
+
 **[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)** (*Windows 10*) 
 > 用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示和更换皮肤
 
