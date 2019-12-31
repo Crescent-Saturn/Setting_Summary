@@ -99,6 +99,9 @@ Latex makenomenclature:
 **[QuickLook](http://pooi.moe/QuickLook/)** (*Windows 10*) 
 > 空格预览工具，免费开源
 
+**[EarTrumpet](https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp)** (*Windows 10*) 
+> 最细致的音量调节软件
+
 
 <a name="Linux"></a>
 ### 2. Linux
