@@ -2,16 +2,21 @@
 Setting summary for OS, IDE, Sys, Tools, etc.
 
 ## Table of Contents
-1. [Windows](#Windows)
-2. [Linux](#Linux)
-3. [Essential Tools](#Essential-Tools)
-	1. [Cross platform](#Cross-platform)
-	2. [Open source](#Open-source)
+- [PC configuration summary](#pc-configuration-summary)
+	- [Table of Contents](#table-of-contents)
+		- [1. Windows](#1-windows)
+			- [1.1 系统优化](#11-%e7%b3%bb%e7%bb%9f%e4%bc%98%e5%8c%96)
+			- [1.2 LaTeX 相关](#12-latex-%e7%9b%b8%e5%85%b3)
+			- [1.3 效率工具 (UWP)](#13-%e6%95%88%e7%8e%87%e5%b7%a5%e5%85%b7-uwp)
+		- [2. Linux](#2-linux)
+		- [3. Small tips](#3-small-tips)
 
 
 
 <a name="Windows"></a>
 ### 1. Windows
+
+#### 1.1 系统优化
 *(Windows 10)*
 **Disable data logging**:		
 - Head to Settings > Privacy, and disable everything, unless there are some things you really need.
@@ -60,6 +65,7 @@ Superfetch-->Disabled
 WPS专业增强版：
 THUV2-32HH7-6NMHN-PTX7Y-QQCTH
 
+#### 1.2 LaTeX 相关
 **LaTeX moderncv No PDF output solution (MiKTeX)**
 
 cmd:
@@ -88,157 +94,38 @@ Latex makenomenclature:
 	xelatex main.tex
 	xelatex main.tex
 
-**Merge TS file by CMD**    
-    
-	copy /b play*.ts play_new.ts
+#### 1.3 效率工具 (UWP)
 
-
-**[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)** (*Windows 10*) 
+**[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)**  
 > 用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示和更换皮肤
 
-**[QuickLook](http://pooi.moe/QuickLook/)** (*Windows 10*) 
+**[QuickLook](http://pooi.moe/QuickLook/)**  
 > 空格预览工具，免费开源
 
-**[EarTrumpet](https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp)** (*Windows 10*) 
+**[EarTrumpet](https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp)**  
 > 最细致的音量调节软件
 
-**[Snipaste](http://zh.snipaste.com/)** (*Windows 10*)
+**[Snipaste](http://zh.snipaste.com/)** 
 > 截图 + 贴图 
 
 
 <a name="Linux"></a>
 ### 2. Linux
-**修复启动：**		
 
-	sudo grub-install /dev/sdb				% Deepin in sdb1, Elementary/Xubuntu/Solus in sdb2
-	sudo grub-install --recheck /dev/sdb	% Windows 10 in sda SSD	
-	sudo update-grub		
-	sudo update-grub2		
+Check [linux_setup.md](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/linux_setup.md) for more details.
 
+<a name="Small-tips"></a>
+### 3. Small tips
 
-**设置时区（双系统同步）**
-
-	sudo hwclock --systohc --localtime
-	sudo hwclock --systohc --localtime
-
-
-**Sudo visudo：**		
-
-	sudo visudo
-	Defaults env_reset, pwfeedback, timestamp_timeout=30		% 30 min, pw will have * in terminal
-	
-
->~~Upgrade all pip packages:~~      
-
->~~pip list --format=legacy -o | cut -d' ' -f1 | xargs pip install -U~~
-	   
-**Use conda instead of pip**
-
-**Conda tutorials**
->  - Install miniconda
->  - conda config --append channels conda-forge    
->  - vim .condarc:    
-  		channels:    
-			- defaults    
-		  	- conda-forge    
-		channel_priority: true
->  - conda update --all -y
-  ...
-
-**FFmpeg convert audio files**
-cmd:
-
-	for %a in ("*.mp3") do ffmpeg -i "%a" "%~na.m4a" 
-
-
-
-**[terminal-colors-branch](https://gist.github.com/danielalvarenga/2df8cabbd6f3041c2378)**
-
-Display git branches in terminal:
-```
-# Add in ~/.bashrc or ~/.bash_profile
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
- 
-RED="\[\033[01;31m\]"
-YELLOW="\[\033[01;33m\]"
-GREEN="\[\033[01;32m\]"
-BLUE="\[\033[01;34m\]"
-NO_COLOR="\[\033[00m\]"
-
-# without host
-PS1="$GREEN\u$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
-# with host
-# PS1="$GREEN\u@\h$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
-```
-
-**Vim**
-Check `.vimrc` [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/.vimrc) for details. Copy to `/home/`.
-
-<a name="Essential-Tools"></a>
-### 3. Essential Tools
-
-<a name="Cross-platform"></a>
-#### 3.1 Cross platform
-**Sublime Text 3**  
-*Package Control*:    
-ST3 `View->Show Consol` :       
-
-
-	import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-
-
-*Packages*:
-- ConvertToUTF8
-- Anaconda
-- LatexTools
-- SublimeREPL
-- ExportHtml
-- InputArgs
-- Side
-
-**New Build** (Python3 Example or conda/envs/python)	        
-`Tools -> Build System -> New Build System`
-
-    {       
-    "cmd": ["/usr/bin/python3","-u", "$file"], 
-    "selector": "source.python", 
-    "encoding": "utf8",
-    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-
-    }
-
-Saved As Python3.sublime-build.
-
-More details for setting can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Preferences.sublime-settings).
-
-Anaconda plugin setting for Sublime Text can be found [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/Anaconda.sublime-settings)
-
-
+**Merge TS file by CMD**    
+    
+	copy /b play*.ts play_new.ts
 
 **PDF Reader background color:**
 
 仿墨水屏的配色:    
 文本颜色RGB：0,0,0    (HEX:000000)    
 页面背景色RGB：223,223,223 (HEX: E9E9E9)    
-
-
-**[VS Code](https://code.visualstudio.com/)**  
-> **Extensions**:  
- - Python
- - Bracket Pair Colorizer 2
- - docs-markdown
- - Markdown Preview Enhanced
- - Visual Studio IntelliCode
- - vscode-icons
- - markdownlint
- - Remote
- - Git Graph
-
-
-<a name="Open-source"></a>
-#### 3.2 Open source
 
 **Coding fonts**
 
