@@ -34,6 +34,35 @@
     Defaults env_reset, pwfeedback, timestamp_timeout=30
     ```
 
+10. Zsh || Oh-my-zsh
+    Follow the github [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh).
+    1. Install zsh (No need to set zsh as default shell)
+    ```
+    sudo apt install zsh
+    ```
+    2. Install Oh My Zsh
+    ```
+    sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+    3. Adjust `.bashrc` to `.zshrc`
+    4. Select a theme (in `.zshrc` file)
+    ```
+    ZSH_THEME="ys"
+    ```
+    5. Add plugins
+    ```
+    plugins=(git history zsh-autosuggestions colored-man-pages)
+    ```
+    **Ex**: zsh autosuggestions
+    ```
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
+    zsh-syntax-highlighting
+    ```
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+
+
 ### Work environment settings
 #### IDE tools preparation:
 - Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)   
