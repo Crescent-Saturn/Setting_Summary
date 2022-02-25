@@ -108,6 +108,9 @@ Latex makenomenclature:
 **[Snipaste](http://zh.snipaste.com/)** 
 > 截图 + 贴图 
 
+**[PowerToys](https://github.com/microsoft/PowerToys)**
+> Windows system utilities to maximize productivity
+
 
 <a name="Linux"></a>
 ### 2. Linux
