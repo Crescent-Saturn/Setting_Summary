@@ -91,3 +91,32 @@ conda config --set channel_priority true
 
 #### PyTorch
 Following the website tutorial [here](https://pytorch.org/get-started/locally/).
+
+#### cuDNN
+To download cuDNN lib without login:
+```bash
+wget http://developer.download.nvidia.com/compute/redist/cudnn/v8.0.4/cudnn-11.0-linux-x64-v8.0.4.30.tgz
+```
+Check the [cuDNN Archive](https://developer.nvidia.com/rdp/cudnn-archive) to replace the desired version number
+
+Unzip:
+```bash
+tar zxvf cudnn-11.0-linux-x64-v8.0.4.30.tgz
+```
+Copy to `/usr/local/cuda`
+```bash
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
+sudo chmod a+r /usr/local/cuda/include/cudnn.h
+sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+```
+
+Check in `~/.bashrc` if these two exist:
+```bash
+export PATH=/usr/local/cuda-11.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64
+```
+Make the soft link:
+```bash
+ln -snf /usr/local/cuda-11.0 /usr/local/cuda
+```
