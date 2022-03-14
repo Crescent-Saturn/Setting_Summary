@@ -1,22 +1,19 @@
 # PC configuration summary
 Setting summary for OS, IDE, Sys, Tools, etc.
 
-## Table of Contents
-- [PC configuration summary](#pc-configuration-summary)
-	- [Table of Contents](#table-of-contents)
-		- [1. Windows](#1-windows)
-			- [1.1 系统优化](#11-%e7%b3%bb%e7%bb%9f%e4%bc%98%e5%8c%96)
-			- [1.2 LaTeX 相关](#12-latex-%e7%9b%b8%e5%85%b3)
-			- [1.3 效率工具 (UWP)](#13-%e6%95%88%e7%8e%87%e5%b7%a5%e5%85%b7-uwp)
-		- [2. Linux](#2-linux)
-		- [3. Small tips](#3-small-tips)
+### Table of Contents
+- [1. Windows](#1-windows)
+	- [1.1 系统优化](#11-%e7%b3%bb%e7%bb%9f%e4%bc%98%e5%8c%96)
+	- [1.2 效率工具 (UWP)](#12-%e6%95%88%e7%8e%87%e5%b7%a5%e5%85%b7-uwp)
+- [2. Linux](#2-linux)
+- [3. Small tips](#3-small-tips)
 
 
 
 <a name="Windows"></a>
-### 1. Windows
+## 1. Windows
 
-#### 1.1 系统优化
+### 1.1 系统优化
 *(Windows 10)*
 **Disable data logging**:		
 - Head to Settings > Privacy, and disable everything, unless there are some things you really need.
@@ -60,12 +57,54 @@ Superfetch-->Disabled
 	sfc /SCANNOW
 
 电源计划－默认方案
-用管理员命令运行“sc config ndu start= disabled”
+用管理员命令运行 `sc config ndu start= disabled`
 
 WPS专业增强版：
 THUV2-32HH7-6NMHN-PTX7Y-QQCTH
 
-#### 1.2 LaTeX 相关
+### 1.2 效率工具 (UWP)
+
+**[QuickLook](http://pooi.moe/QuickLook/)**  
+> 空格预览工具，免费开源
+
+**[EarTrumpet](https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp)**  
+> 最细致的音量调节软件
+
+**[Snipaste](http://zh.snipaste.com/)** 
+> 截图 + 贴图 
+
+**[PowerToys](https://github.com/microsoft/PowerToys)**
+> Windows system utilities to maximize productivity
+
+**[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)**  
+> 用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示和更换皮肤
+
+
+<a name="Linux"></a>
+## 2. Linux
+
+Check [linux_setup.md](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/linux_setup.md) for more details.
+
+<a name="Small-tips"></a>
+## 3. Small tips
+
+**Merge TS file by CMD**    
+    
+	copy /b play*.ts play_new.ts
+
+**PDF Reader background color:**
+
+仿墨水屏的配色:    
+文本颜色RGB：`0,0,0    (HEX:000000)`   
+页面背景色RGB：`223,223,223 (HEX: E9E9E9)`   
+
+**Coding fonts**
+
+ - [Cascadia Code](https://github.com/microsoft/cascadia-code)
+ - [Source Code Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+ - [LXGW WenKai / 霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
+
+
 **LaTeX moderncv No PDF output solution (MiKTeX)**
 
 cmd:
@@ -94,43 +133,3 @@ Latex makenomenclature:
 	xelatex main.tex
 	xelatex main.tex
 
-#### 1.3 效率工具 (UWP)
-
-**[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)**  
-> 用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示和更换皮肤
-
-**[QuickLook](http://pooi.moe/QuickLook/)**  
-> 空格预览工具，免费开源
-
-**[EarTrumpet](https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp)**  
-> 最细致的音量调节软件
-
-**[Snipaste](http://zh.snipaste.com/)** 
-> 截图 + 贴图 
-
-**[PowerToys](https://github.com/microsoft/PowerToys)**
-> Windows system utilities to maximize productivity
-
-
-<a name="Linux"></a>
-### 2. Linux
-
-Check [linux_setup.md](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/linux_setup.md) for more details.
-
-<a name="Small-tips"></a>
-### 3. Small tips
-
-**Merge TS file by CMD**    
-    
-	copy /b play*.ts play_new.ts
-
-**PDF Reader background color:**
-
-仿墨水屏的配色:    
-文本颜色RGB：0,0,0    (HEX:000000)    
-页面背景色RGB：223,223,223 (HEX: E9E9E9)    
-
-**Coding fonts**
-
- - [Cascadia Code](https://github.com/microsoft/cascadia-code)
- - [Source Code Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
