@@ -13,6 +13,10 @@ set fileencodings=utf-8,gb18030
 set autoindent
 set smartindent
 
+" Improve search
+set hlsearch
+set incsearch
+
 " 修正 vim 删除/退格键行为
 " 原生的 vim 行为有点怪：
 " 如果你在一行的开头切换到插入模式，这时按退格无法退到上一行
@@ -25,8 +29,10 @@ set backspace=eol,start,indent
 set laststatus=2
 " 高亮第 80 列，推荐
 set colorcolumn=80
-" 高亮光标所在行，推荐
+" 高亮光标所在行及列，推荐
 set cursorline
+set cursorcolumn
+
 " 显示窗口比较小的时候折行展示，不然需要水平翻页，推荐
 set linebreak
 " 开启语法高亮
