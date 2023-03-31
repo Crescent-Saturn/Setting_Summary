@@ -2,6 +2,7 @@
 
 ### Installation (Dual boot in two disks)
 1. Choose the target disk (ex: sdb1), format into `ext4` and choose `/` as `partion`
+   1. If using UEFI, add new partion and format into `efi` and choose `EFI System Partition`.
 2. (optional) Make auto-login enabled when creating the account
 3. Set the timezone to make dual ssys time sync:
     ```
@@ -26,9 +27,10 @@
     ```
     sudo apt intall chrome-gnome-shell gnome-shell-extensions gnome-sushi
     ```
-    `gnome-sushi` is for QuickLook in Linux.    
+    `gnome-sushi` is as `QuickLook` in Linux.
+
     For the extensions, install `open-weather` and `Bing Wallpaper changer`, then make the proper adjustments.
-9. Visudo:
+9.  Visudo:
     ```
     sudo visudo
     Defaults env_reset, pwfeedback, timestamp_timeout=30
@@ -65,8 +67,8 @@
 
 ### Work environment settings
 #### IDE tools preparation:
-- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)   
-- Install [VSCode](https://code.visualstudio.com/download)  
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- Install [VSCode](https://code.visualstudio.com/download)
 
 **1. Conda settins:**
 
