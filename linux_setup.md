@@ -17,7 +17,7 @@
     ```
     sudo apt install git vim curl cmake imagemagic
     ```
-6. Config vim using `.vimrc` [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/dev/.vimrc), copying into `/home/` and `.bashrc` as personal habitude.
+6. Config vim using `.vimrc` [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/master/.vimrc), copying into `/home/` and `.bashrc` as personal habitude.
 7. Grub personalization:
     ```
     sudo apt install grub-customize
