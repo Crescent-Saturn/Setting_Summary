@@ -6,10 +6,10 @@ Setting summary for OS, IDE, Sys, Tools, etc.
 		- [Table of Contents](#table-of-contents)
 	- [1. Windows](#1-windows)
 		- [1.1 系统优化](#11-系统优化)
-		- [1.2 效率工具 (UWP)](#12-效率工具-uwp)
+		- [1.2 效率工具 (Win)](#12-效率工具-win)
 	- [2. Linux](#2-linux)
-	- [3. Small tips](#3-small-tips)
-
+ 	- [3. Mac](#3-mac)
+	- [4. Small tips](#4-small-tips)
 
 
 <a name="Windows"></a>
@@ -63,7 +63,7 @@ Setting summary for OS, IDE, Sys, Tools, etc.
 用管理员命令运行 `sc config ndu start= disabled`
 
 
-### 1.2 效率工具 (UWP)
+### 1.2 效率工具 (Win)
 
 - **[QuickLook](http://pooi.moe/QuickLook/)**
 > 空格预览工具，免费开源
@@ -71,7 +71,7 @@ Setting summary for OS, IDE, Sys, Tools, etc.
 - **[EarTrumpet](https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp)**
 > 最细致的音量调节软件
 
-- **[Snipaste](http://zh.snipaste.com/)**
+- **[PixPin](https://pixpin.cn/)** ~~[Snipaste]~~
 > 截图 + 贴图
 
 - **[PowerToys](https://github.com/microsoft/PowerToys)**
@@ -88,8 +88,22 @@ THUV2-32HH7-6NMHN-PTX7Y-QQCTH
 
 Check [linux_setup.md](linux_setup.md) for more details.
 
+## 3. Mac
+<a name="Mac"></a>
+
+### 实用软件
+
+- **[PixPin](https://pixpin.cn/)** ~~[Snipaste]~~
+> 截图 + 贴图
+
+- **[EcoPaste](https://ecopaste.cn/)**
+> 好用的剪贴板管理工具
+
+- **[86五笔极点码表 for 鼠须管](https://github.com/KyleBing/rime-wubi86-jidian)**
+> 五笔输入
+
 <a name="Small-tips"></a>
-## 3. Small tips
+## 4. Small tips
 
 **Merge TS file by CMD**
 ```
