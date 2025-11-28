@@ -102,6 +102,9 @@ Check [linux_setup.md](linux_setup.md) for more details.
 - **[86五笔极点码表 for 鼠须管](https://github.com/KyleBing/rime-wubi86-jidian)**
 > 五笔输入
 
+- **[PicView](github.com/Ruben2776/PicView)**
+> 图片查看工具
+
 <a name="Small-tips"></a>
 ## 4. Small tips
 
