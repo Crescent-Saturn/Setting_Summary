@@ -108,6 +108,49 @@ Check [linux_setup.md](linux_setup.md) for more details.
 <a name="Small-tips"></a>
 ## 4. Small tips
 
+**SSH config** \
+`~/.ssh/config`:
+```
+### =============
+### Basic
+### =============
+Host *
+  AddKeysToAgent yes
+  ServerAliveInterval 60
+  ServerAliveCountMax 10
+
+### =============
+### GitHub
+### =============
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+### =============
+### GitLab
+### =============
+Host gitlab.com
+  HostName gitlab.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+### =============
+### Remote Server
+### =============
+Host server_alias
+  HostName server address
+  User username
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+```
+Where `AddKeysToAgent yes` help prevent manually adding private-key everytime of login. Therefore it is set in *Basic*. \
+For server connection, name one you like, but for GitLab AND GitHub connection (especially inside remote server), keep `Host` and `HostName` **SAME**!
+
+
 **Merge TS file by CMD**
 ```
 copy /b play*.ts play_new.ts
