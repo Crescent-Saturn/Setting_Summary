@@ -105,6 +105,9 @@ Check [linux_setup.md](linux_setup.md) for more details.
 - **[PicView](github.com/Ruben2776/PicView)**
 > 图片查看工具
 
+- **[Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight)**
+> Quick Look 扩展程序查看源码
+
 <a name="Small-tips"></a>
 ## 4. Small tips
 
