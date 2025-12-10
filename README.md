@@ -108,6 +108,9 @@ Check [linux_setup.md](linux_setup.md) for more details.
 - **[Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight)**
 > Quick Look 扩展程序查看源码
 
+- **[AltTab](https://alt-tab-macos.netlify.app/)**
+> Windows alt-tab on macOS
+
 <a name="Small-tips"></a>
 ## 4. Small tips
 
