@@ -121,6 +121,13 @@ Check [linux_setup.md](linux_setup.md) for more details.
 ### Basic
 ### =============
 Host *
+	# 保持长连接，即使关闭 VS Code，下次打开也瞬间连接
+	ControlMaster auto
+	ControlPath ~/.ssh/sockets/%r@%h-%p
+	ControlPersist 12h
+	# 定期发送心跳包，防止因闲置被服务器断开
+	ServerAliveInterval 60
+	ServerAliveCountMax 10
   AddKeysToAgent yes
   ServerAliveInterval 60
   ServerAliveCountMax 10
