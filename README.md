@@ -114,6 +114,10 @@ Check [linux_setup.md](linux_setup.md) for more details.
 <a name="Small-tips"></a>
 ## 4. Small tips
 
+**yt-dlp config** \
+Refer to [config/yt-dlp/config](config/yt-dlp/config)
+
+
 **SSH config** \
 `~/.ssh/config`:
 ```
