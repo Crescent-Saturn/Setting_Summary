@@ -17,12 +17,12 @@
     ```
     sudo apt install git vim curl cmake imagemagic
     ```
-6. Config vim using `.vimrc` [here](https://github.com/Crescent-Saturn/Setting_Summary/blob/master/.vimrc), copying into `/home/` and `.bashrc` as personal habitude.
+6. Config vim using [config/vim/.vimrc](config/vim/.vimrc), copying into `/home/` and `.bashrc` as personal habitude.
 7. Grub personalization:
     ```
     sudo apt install grub-customize
     ```
-    Download Tela grub theme [here](https://www.gnome-look.org/p/1307852/), and install with its bash file.
+    Download Tela grub theme [Tela](https://www.gnome-look.org/p/1307852/), and install with its bash file.
 8. Gnome extras:
     ```
     sudo apt intall chrome-gnome-shell gnome-shell-extensions gnome-sushi
@@ -37,7 +37,7 @@
     ```
 
 10. Zsh || Oh-my-zsh
-    Follow the github [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh).
+    Follow the github [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).
     1. Install zsh (No need to set zsh as default shell)
     ```
     sudo apt install zsh
