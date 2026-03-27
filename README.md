@@ -111,6 +111,9 @@ Check [linux_setup.md](linux_setup.md) for more details.
 - **[AltTab](https://alt-tab-macos.netlify.app/)**
 > Windows alt-tab on macOS
 
+- **[Textream](https://github.com/f/textream)**
+> A free macOS teleprompter with real-time word tracking, classic auto-scroll, and voice-activated scrolling.
+
 <a name="Small-tips"></a>
 ## 4. Small tips
 
