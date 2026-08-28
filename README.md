@@ -96,7 +96,7 @@ Check [linux_setup.md](linux_setup.md) for more details.
 - **[PixPin](https://pixpin.cn/)** ~~[Snipaste]~~
 > 截图 + 贴图
 
-- **[EcoPaste](https://ecopaste.cn/)**
+- **[EcoPaste](https://github.com/EcoPasteHub/EcoPaste)**
 > 好用的剪贴板管理工具
 
 - **[86五笔极点码表 for 鼠须管](https://github.com/KyleBing/rime-wubi86-jidian)**
@@ -113,6 +113,9 @@ Check [linux_setup.md](linux_setup.md) for more details.
 
 - **[Textream](https://github.com/f/textream)**
 > A free macOS teleprompter with real-time word tracking, classic auto-scroll, and voice-activated scrolling.
+
+- **[MacPacker](https://github.com/sarensw/MacPacker)**
+> The archive manager for macOS that should have existed all along.
 
 <a name="Small-tips"></a>
 ## 4. Small tips
