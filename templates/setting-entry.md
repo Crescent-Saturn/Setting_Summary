@@ -1,16 +1,16 @@
-# Setting or procedure title
+# 设置或操作名称
 
-> **Status:** Needs review
-> **Applies to:** OS/release, hardware, and software versions
-> **Last verified:** Not tested
-> **Risk:** Low / Medium / High
+> **状态：** 待复核
+> **适用范围：** 操作系统/版本、硬件和软件版本
+> **最后验证：** 尚未测试
+> **风险：** 低 / 中 / 高
 
-## Purpose and prerequisites
+## 用途与前置条件
 
-## Procedure
+## 操作步骤
 
-## Verification
+## 验证
 
-## Rollback
+## 回滚
 
-## Sources
+## 资料来源

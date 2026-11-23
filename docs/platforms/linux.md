@@ -1,22 +1,22 @@
 # Linux
 
-> **Status:** Needs review
-> **Applies to:** Distribution- and desktop-environment-specific; no current version has been tested
-> **Last verified:** Not tested
-> **Risk:** Low to Medium, depending on the setting
+> **状态：** 待复核
+> **适用范围：** 依发行版和桌面环境而异；尚未在具体版本中测试
+> **最后验证：** 尚未测试
+> **风险：** 低至中，取决于具体设置
 
-Linux desktop behavior differs across distributions, releases, display servers, and desktop environments. Confirm the exact environment before applying a setting or command.
+不同发行版、版本、显示服务器和桌面环境的行为可能不同。应用设置或命令前，请确认实际环境。
 
-## Desktop preferences
+## 桌面偏好
 
-The older notes mentioned GNOME Shell extensions, a file preview tool, and a GRUB theme. These are optional preferences, not setup requirements. Check compatibility and install extensions/themes only from trusted sources; avoid running an unreviewed installer script.
+旧笔记提到 GNOME Shell 扩展、文件预览工具和 GRUB 主题。这些都属于可选偏好，并非必需步骤。请先确认兼容性，仅从可信来源安装扩展和主题；不要运行未经审查的安装脚本。
 
-## Dual-boot clock
+## 双系统时钟
 
-An older note changed the hardware clock to local time to synchronize Windows and Linux. This can affect time handling and is not included as a default recommendation. Prefer a current distribution-supported solution and verify both operating systems' time-zone and clock behavior before changing it.
+旧笔记曾建议将硬件时钟设为本地时间，以同步 Windows 和 Linux。这可能影响时间处理，因此不作为默认建议。更改前请优先查阅发行版当前支持的方案，并验证两个系统的时区和时钟行为。
 
-## Related
+## 相关内容
 
-- [Linux workstation profile](../../profiles/linux-workstation.md)
-- [Software catalog](../topics/software-catalog.md)
-- [NVIDIA GPU and CUDA](../topics/hardware/nvidia-gpu-cuda.md)
+- [Linux 工作站配置清单](../../profiles/linux-workstation.md)
+- [软件目录](../topics/software-catalog.md)
+- [NVIDIA GPU 与 CUDA](../topics/hardware/nvidia-gpu-cuda.md)

@@ -1,23 +1,23 @@
-# NVIDIA GPU and CUDA
+# NVIDIA GPU 与 CUDA
 
-> **Status:** Deprecated historical notes; current installation guidance is not verified
-> **Applies to:** GPU, driver, toolkit, framework, and distribution versions must be selected together
-> **Last verified:** Not tested
-> **Risk:** High — driver and library changes can break the system or environment
+> **状态：** 旧版内容已弃用；当前安装说明未经验证
+> **适用范围：** GPU、驱动、工具包、框架和发行版版本需要结合选择
+> **最后验证：** 尚未测试
+> **风险：** 高——驱动和库的变更可能导致系统或环境无法正常工作
 
-The former Linux setup document contained commands for downloading an old cuDNN archive, copying libraries into `/usr/local/cuda`, and changing library paths. Those commands are intentionally not carried forward: they target specific legacy versions, use an obsolete download location, and do not establish compatibility with the installed driver or framework.
+旧版 Linux 安装文档包含下载旧版 cuDNN、将库复制到 `/usr/local/cuda` 以及修改库路径的命令。这里不再保留这些命令：它们针对特定旧版本，使用过时的下载地址，也没有说明与当前驱动或框架的兼容关系。
 
-For a new installation:
+安装前建议：
 
-1. Record the GPU model, operating system/release, driver, Python, and framework version.
-2. Check the framework's official installation selector and NVIDIA's current compatibility documentation.
-3. Prefer the framework's supported package/environment method unless a system-wide toolkit is specifically required.
-4. Test with the framework's documented device query and a representative workload before considering the setup complete.
+1. 记录 GPU 型号、操作系统及版本、驱动、Python 和框架版本。
+2. 查看框架官方安装选择器以及 NVIDIA 当前兼容性文档。
+3. 除非确实需要系统级工具包，否则优先采用框架支持的软件包或环境安装方式。
+4. 使用框架文档中的设备检测方法和实际工作负载进行测试，再判断安装是否完成。
 
-Do not mark a procedure verified until it has been tested on a stated hardware/software combination. Record a rollback plan before changing drivers or system libraries.
+只有在指定软硬件组合上实际测试后，才能将流程标为已验证。更改驱动或系统库前，请记录回滚方案。
 
-## Sources
+## 资料来源
 
-- [PyTorch installation selector](https://pytorch.org/get-started/locally/)
-- [NVIDIA CUDA Toolkit documentation](https://docs.nvidia.com/cuda/)
-- [NVIDIA cuDNN documentation](https://docs.nvidia.com/deeplearning/cudnn/)
+- [PyTorch 安装选择器](https://pytorch.org/get-started/locally/)
+- [NVIDIA CUDA 工具包文档](https://docs.nvidia.com/cuda/)
+- [NVIDIA cuDNN 文档](https://docs.nvidia.com/deeplearning/cudnn/)

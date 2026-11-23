@@ -1,11 +1,11 @@
-# Setup profiles
+# 配置清单
 
-Profiles are ordered checklists, not copies of the detailed topic pages. Follow one when preparing a device, then use the linked canonical pages for the specifics.
+配置清单用于按顺序准备设备或工作环境，不重复主题文档中的详细说明。配置设备时先按清单操作，再查看链接的规范文档。
 
-## Available profiles
+## 已有清单
 
-- [Linux workstation](linux-workstation.md) — a draft checklist based on the former Linux setup notes.
+- [Linux 工作站](linux-workstation.md)——根据旧版 Linux 安装笔记整理的初稿。
 
-## Planned profiles
+## 计划中的清单
 
-Add a profile only for a device or workload that is actually used. Potential examples include macOS laptop, Windows PC, and GPU server.
+仅为实际使用的设备或工作负载新增清单。未来可考虑 macOS 笔记本、Windows 电脑或 GPU 服务器。

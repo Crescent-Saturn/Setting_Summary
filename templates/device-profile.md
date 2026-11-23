@@ -1,23 +1,23 @@
-# Device or workload profile
+# 设备或工作负载配置清单
 
-> **Status:** Needs review
-> **Applies to:** Device, OS/release, and workload
-> **Last verified:** Not tested
+> **状态：** 待复核
+> **适用范围：** 设备、操作系统/版本和工作负载
+> **最后验证：** 尚未测试
 
-## Required
-
-1.
-
-## Recommended
+## 必需步骤
 
 1.
 
-## Optional preferences
+## 建议步骤
 
-- Link to canonical topic pages; do not duplicate their instructions.
+1.
 
-## Verification
+## 可选偏好
 
-## Rollback
+- 链接到规范主题文档，不要重复其中的操作说明。
 
-## Sources
+## 验证
+
+## 回滚
+
+## 资料来源

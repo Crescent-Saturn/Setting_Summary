@@ -1,10 +1,10 @@
-# Sublime Text configuration
+# Sublime Text 配置
 
-These settings and key bindings were moved from the repository's archive without behavior changes. They are historical starting points, not a complete Sublime Text setup, and have not been tested against a current Sublime Text version.
+这些设置和快捷键从仓库旧归档中迁出，文件内容未更改。它们是历史参考，并非完整的 Sublime Text 环境配置，也未在当前版本中测试。
 
-- `Preferences.sublime-settings` references the Material Theme and contains personal editor preferences.
-- `Anaconda.sublime-settings` and `Default (Windows).sublime-keymap` refer to the Anaconda and SublimeREPL packages.
+- `Preferences.sublime-settings` 引用了 Material Theme，并包含个人编辑器偏好。
+- `Anaconda.sublime-settings` 和 `Default (Windows).sublime-keymap` 依赖 Anaconda 与 SublimeREPL 软件包。
 
-The old notes also listed ConvertToUTF8, LatexTools, SublimeREPL, ExportHtml, InputArgs, and other packages, plus a Python 3 build-system example. Treat those names and settings as historical; verify package availability, compatibility, and the local interpreter path before recreating that setup. The archived Package Control installation command is not included because it used a legacy download/checksum flow.
+旧笔记还列出 ConvertToUTF8、LatexTools、SublimeREPL、ExportHtml、InputArgs 等软件包以及 Python 3 构建系统示例。这些名称和设置均属历史内容；重新配置前请核实软件包是否可用、是否兼容，以及本地解释器路径。旧版 Package Control 安装命令使用了过时的下载和校验流程，因此不再提供。
 
-Install any required package through its current official source, review the settings, and copy only the preferences you want into the appropriate Sublime Text user-data directory.
+请通过当前官方渠道安装所需软件包，检查设置后，仅将需要的偏好复制到 Sublime Text 对应的用户数据目录。

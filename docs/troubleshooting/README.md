@@ -1,6 +1,6 @@
-# Troubleshooting
+# 故障排查
 
-These pages capture known symptoms and potential resolutions. A legacy note is not a validated fix: verify the environment and current upstream guidance before applying it.
+这些文档记录已知问题现象和可能的处理方式。旧笔记不等于已验证的修复方法；操作前请确认环境并查看上游当前文档。
 
-- [Pycocotools on Windows](pycocotools-windows.md) — historical MSVC/build-tools procedure; needs validation.
-- [LaTeX and document-viewer notes](latex-and-pdf.md) — historical MiKTeX/XeLaTeX commands and a PDF color preference.
+- [Windows 上安装 pycocotools](pycocotools-windows.md)——旧版 MSVC/构建工具流程，仍待验证。
+- [LaTeX 与 PDF 笔记](latex-and-pdf.md)——旧版 MiKTeX/XeLaTeX 命令及 PDF 阅读器配色偏好。
