@@ -1,34 +1,34 @@
-# Software catalog
+# 软件目录
 
-Inventory of applications mentioned in this repository. **Needs review** means the entry has not been recently tested or checked for current support.
+本目录汇总仓库中提及的应用。标记为**待复核**表示近期未测试或未核实当前支持情况。
 
-| Application | Platform(s) | Purpose | Status / notes |
+| 应用 | 平台 | 用途 | 状态 / 备注 |
 |---|---|---|---|
-| [QuickLook](https://pooi.moe/QuickLook/) | Windows | Preview files with Space | Needs review |
-| [EarTrumpet](https://eartrumpet.app/) | Windows | Per-application audio controls | Needs review |
-| [PixPin](https://pixpin.cn/) | Windows, macOS | Screenshot and pinning utility | Needs review |
-| [PowerToys](https://github.com/microsoft/PowerToys) | Windows | Productivity utilities | Needs review |
-| [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor) | Windows | System and network monitoring | Needs review |
-| [EcoPaste](https://github.com/EcoPasteHub/EcoPaste) | macOS | Clipboard manager | Needs review |
-| [Rime Wubi 86 Jidian](https://github.com/KyleBing/rime-wubi86-jidian) | macOS | Wubi input method data | Needs review |
-| [PicView](https://github.com/Ruben2776/PicView) | macOS (per original note) | Image viewer | Needs review; verify platform support |
-| [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight) | macOS | Quick Look source-code preview | Needs review |
-| [AltTab](https://alt-tab-macos.netlify.app/) | macOS | Window switching | Needs review |
-| [Textream](https://github.com/f/textream) | macOS | Teleprompter | Needs review |
-| [MacPacker](https://github.com/sarensw/MacPacker) | macOS | Archive manager | Needs review |
-| [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) | Windows, macOS, Linux | Python environments | Needs review |
-| [Visual Studio Code](https://code.visualstudio.com/) | Windows, macOS, Linux | Code editor | Needs review |
-| [Sublime Text](https://www.sublimetext.com/) | Windows, macOS, Linux | Text editor | Legacy settings preserved in [`configs/sublime/`](../../configs/sublime/README.md) |
-| [Vim](https://www.vim.org/) | Windows, macOS, Linux | Text editor | Starting config in [`configs/vim/.vimrc`](../../configs/vim/.vimrc); dependencies not validated |
-| [Zsh](https://www.zsh.org/) | Linux (and other Unix-like systems) | Shell | Needs review; use distribution guidance |
-| [PyTorch](https://pytorch.org/get-started/locally/) | Windows, macOS, Linux | Machine-learning framework | Select install commands for the exact OS, Python, and accelerator |
-| [ImageMagick](https://imagemagick.org/) | Linux (also other platforms) | Image processing | Needs review |
-| [FFmpeg](https://ffmpeg.org/) | Windows, macOS, Linux | Media processing | Needs review |
-| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Windows, macOS, Linux | Media downloader | Config in [`configs/yt-dlp/config`](../../configs/yt-dlp/config); validate options against installed version |
+| [QuickLook](https://pooi.moe/QuickLook/) | Windows | 按空格键预览文件 | 待复核 |
+| [EarTrumpet](https://eartrumpet.app/) | Windows | 按应用调节音量 | 待复核 |
+| [PixPin](https://pixpin.cn/) | Windows、macOS | 截图和贴图 | 待复核 |
+| [PowerToys](https://github.com/microsoft/PowerToys) | Windows | 效率工具集 | 待复核 |
+| [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor) | Windows | 系统及网络状态监控 | 待复核 |
+| [EcoPaste](https://github.com/EcoPasteHub/EcoPaste) | macOS | 剪贴板管理 | 待复核 |
+| [鼠须管五笔 86 极点码表](https://github.com/KyleBing/rime-wubi86-jidian) | macOS | 五笔输入法码表 | 待复核 |
+| [PicView](https://github.com/Ruben2776/PicView) | macOS（原笔记所述） | 图片查看器 | 待复核；请确认平台支持情况 |
+| [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight) | macOS | Quick Look 源码预览 | 待复核 |
+| [AltTab](https://alt-tab-macos.netlify.app/) | macOS | 窗口切换 | 待复核 |
+| [Textream](https://github.com/f/textream) | macOS | 提词器 | 待复核 |
+| [MacPacker](https://github.com/sarensw/MacPacker) | macOS | 归档管理工具 | 待复核 |
+| [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) | Windows、macOS、Linux | Python 环境管理 | 待复核 |
+| [Visual Studio Code](https://code.visualstudio.com/) | Windows、macOS、Linux | 代码编辑器 | 待复核 |
+| [Sublime Text](https://www.sublimetext.com/) | Windows、macOS、Linux | 文本编辑器 | 历史配置保存在 [`configs/sublime/`](../../configs/sublime/README.md) |
+| [Vim](https://www.vim.org/) | Windows、macOS、Linux | 文本编辑器 | 初始配置见 [`configs/vim/.vimrc`](../../configs/vim/.vimrc)，依赖尚未验证 |
+| [Zsh](https://www.zsh.org/) | Linux 及其他类 Unix 系统 | Shell | 待复核；请参照发行版说明 |
+| [PyTorch](https://pytorch.org/get-started/locally/) | Windows、macOS、Linux | 机器学习框架 | 按目标系统、Python 和加速器选择安装命令 |
+| [ImageMagick](https://imagemagick.org/) | Linux 及其他平台 | 图像处理 | 待复核 |
+| [FFmpeg](https://ffmpeg.org/) | Windows、macOS、Linux | 音视频处理 | 待复核 |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Windows、macOS、Linux | 媒体下载工具 | 配置见 [`configs/yt-dlp/config`](../../configs/yt-dlp/config)，请按安装版本核对选项 |
 
-## Fonts
+## 字体
 
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
-- [LXGW WenKai](https://github.com/lxgw/LxgwWenKai)
+- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
 
-Font suggestions are preferences, not prerequisites.
+字体建议仅为个人偏好，并非必需项。

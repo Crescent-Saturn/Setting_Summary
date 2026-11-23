@@ -1,36 +1,36 @@
-# Linux workstation setup
+# Linux 工作站配置
 
-> **Status:** Needs review
-> **Applies to:** Debian/Ubuntu-family distributions; exact releases and desktop environments have not been tested
-> **Last verified:** Not tested
-> **Risk:** Medium — partitioning, bootloader, privilege, and driver choices are device-specific
+> **状态：** 待复核
+> **适用范围：** Debian/Ubuntu 系发行版；尚未在具体发行版、版本或桌面环境中测试
+> **最后验证：** 尚未测试
+> **风险：** 中——分区、引导程序、权限和驱动操作都与设备有关
 
-This is a checklist distilled from older notes, not a universal installation recipe. Back up important data and consult the distribution's current installation documentation before changing partitions or boot configuration.
+本清单根据旧笔记整理，不是适用于所有设备的安装方案。更改分区或引导配置前请备份重要数据，并查阅所用发行版的当前安装文档。
 
-## Required
+## 必需步骤
 
-1. Install the desired distribution using its current installer. Confirm the target disk and boot mode (UEFI/BIOS) before changing partitions. The previous dual-disk partitioning notes are not retained as instructions.
-2. Complete the distribution's supported system update procedure.
-3. Install tools needed for the intended workload. The earlier notes used Git, Vim, curl, CMake, and ImageMagick; treat this list as a starting point, not a requirement.
-4. Configure the shell and editor you actually use. See [Developer environment](../docs/topics/cross-platform/developer-environment.md).
-5. If this is a development machine, set up Conda and VS Code only as needed; see the [software catalog](../docs/topics/software-catalog.md).
+1. 使用目标发行版的当前安装程序安装系统。调整分区前确认目标磁盘以及启动模式（UEFI/BIOS）。旧版双硬盘分区说明不再作为操作指南保留。
+2. 使用发行版支持的方式完成系统更新。
+3. 按实际工作负载安装工具。旧笔记提到 Git、Vim、curl、CMake 和 ImageMagick；这些仅供参考，并非必装项目。
+4. 配置实际使用的 Shell 和编辑器，参见[开发环境](../docs/topics/cross-platform/developer-environment.md)。
+5. 如果这是开发设备，按需配置 Conda 和 VS Code，参见[软件目录](../docs/topics/software-catalog.md)。
 
-## Optional preferences
+## 可选偏好
 
-- GNOME extensions, preview utilities, themes, and shell customizations are optional and vary by distribution and desktop version. Review each project's current installation guidance before installing.
-- Oh My Zsh and its plugins were previously installed by running a downloaded shell script. That command is intentionally not repeated here; use the project's current official instructions and inspect installation changes first.
-- The previous notes suggested changing `sudoers` password feedback and timeout settings. Those changes affect privilege behavior and are omitted pending a security and version review.
-- For CUDA workloads, see [NVIDIA GPU and CUDA](../docs/topics/hardware/nvidia-gpu-cuda.md). Do not use the historical cuDNN commands without checking current compatibility.
+- GNOME 扩展、文件预览工具、主题和 Shell 定制均为可选项，且依发行版和桌面版本而异。安装前请查看项目当前的安装说明。
+- 旧笔记通过运行下载的 Shell 脚本安装 Oh My Zsh 及其插件。这里不再重复该命令；请遵循项目当前的官方说明，并先检查安装会修改的内容。
+- 旧笔记建议更改 `sudoers` 的密码反馈和超时设置。这些设置会影响提权行为，安全和版本影响尚待审查，因此暂不提供操作步骤。
+- CUDA 工作负载请参阅 [NVIDIA GPU 与 CUDA](../docs/topics/hardware/nvidia-gpu-cuda.md)。检查当前兼容性前，不要使用旧 cuDNN 命令。
 
-## Verification
+## 验证
 
-Confirm the system boots normally, networking works, updates complete, and each installed application starts. Record the distribution release, desktop environment, hardware, and test date before changing this page's status to **Verified**.
+确认系统可以正常启动、网络可用、系统更新成功且已安装应用能够启动。将本页标为**已验证**前，记录发行版版本、桌面环境、硬件和测试日期。
 
-## Rollback
+## 回滚
 
-Use the distribution's documented recovery process for boot or partition problems. Remove optional applications through the package manager that installed them. Do not copy old bootloader repair commands without confirming the disk and boot mode.
+启动或分区故障请使用发行版文档中的恢复流程。通过对应的软件包管理器移除可选应用。未确认磁盘和启动模式前，不要照抄旧的引导修复命令。
 
-## Sources
+## 资料来源
 
-- [Ubuntu installation documentation](https://ubuntu.com/tutorials/install-ubuntu-desktop)
-- [Ubuntu community help wiki](https://help.ubuntu.com/)
+- [Ubuntu 安装文档](https://ubuntu.com/tutorials/install-ubuntu-desktop)
+- [Ubuntu 社区帮助文档](https://help.ubuntu.com/)

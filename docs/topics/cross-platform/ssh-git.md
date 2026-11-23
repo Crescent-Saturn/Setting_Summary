@@ -1,17 +1,17 @@
-# SSH and Git
+# SSH 与 Git
 
-> **Status:** Needs review
-> **Applies to:** OpenSSH clients on Windows, macOS, and Linux
-> **Last verified:** Not tested
+> **状态：** 待复核
+> **适用范围：** Windows、macOS 和 Linux 上的 OpenSSH 客户端
+> **最后验证：** 尚未测试
 
-The sanitized example is in [`configs/ssh/config.example`](../../../configs/ssh/config.example). Copy only the needed entries into `~/.ssh/config`, replace placeholders, and protect the file with appropriate user-only permissions. Never put private-key contents in this repository.
+已清理敏感信息的示例位于 [`configs/ssh/config.example`](../../../configs/ssh/config.example)。仅将需要的条目复制到 `~/.ssh/config`，替换占位内容，并设置适当的仅用户可读权限。切勿将私钥内容放入仓库。
 
-The example shows keepalive options and separate entries for GitHub, GitLab, and a user-defined server alias. Ensure the referenced private key exists locally and that the server hostname and username are correct. SSH connection multiplexing is not configured in the example because it requires a writable control-socket directory and client-specific validation.
+示例包含连接保活选项，以及 GitHub、GitLab 和自定义服务器别名。请确认本机存在所引用的私钥，并核对服务器主机名和用户名。示例没有配置 SSH 连接复用，因为它需要可写的控制套接字目录，并且需要针对客户端环境进行验证。
 
-## Verification
+## 验证
 
-Use `ssh -T git@github.com` or the corresponding provider's documented test after configuring the local key. A successful authentication test does not grant repository access by itself.
+配置本机密钥后，可运行 `ssh -T git@github.com` 或对应服务商文档中的测试命令。认证成功本身并不代表拥有仓库访问权限。
 
-## Rollback
+## 回滚
 
-Remove or comment out the entries added to the local SSH config. Keep a backup before editing an existing config.
+从本地 SSH 配置中移除或注释新增条目。编辑已有配置前请先备份。
